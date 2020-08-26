@@ -10,7 +10,15 @@
 <body>
     <main>
         <h1>JavaScript Accessibility Test</h1>
-        <p>Testing your HTML using a tool such as <a href="https://html5.validator.nu/" target="_blank" noopener noreferrer>https://html5.validator.nu/</a> is a great way to check the validity of your page as it loads.</p>
+        <p>Testing your HTML using a tool such as <a href="https://html5.validator.nu/" target="_blank" noopener noreferrer>https://html5.validator.nu/</a> is a great way to check the validity of your page after it initially loads.</p>
+        <p>However, the validator won't test changes to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank" noopener noreferrer>Document Object Model (DOM)</a> made by JavaScript. A tool like the <a href="https://www.deque.com/axe/" target="_blank" noopener noreferrer>aXe browser extension</a> can test this sort of change.</p>
+        <p>Let's try it out!</p>
+        <form>
+            <label for="yourName">Please enter your name</label>
+            <input id="yourName" name="getName">
+            <button type="submit">Go</button>
+        </form>
+        <div id="update"></div>
     </main>
 </body>
 </html>
